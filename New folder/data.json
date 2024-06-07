@@ -1,0 +1,73 @@
+{
+    "user" : {
+        "fullName": "Bonginkosi Mbatha ",
+        "photo" : "./Eugene.jpg"
+    },
+    "city" : {
+        "name" : "Portugual",
+        "photo" : "./lisbona-notte.jpg",
+        "description" : " Dazzling coastlines, vibrant cities and rich history complete with charming villages and medieval coastlines; Portugal has all of this and more"
+    },
+    "foreignLanguage" : {
+        "language" : "Portuguese",
+        "phrases" : [{
+            "englishPhrase" : "Hello",
+            "foreignLanguage" : "olá"
+        },
+        {
+            "englishPhrase" : "Bye",
+            "foreignLanguage" : "tchau"
+        }]
+    },
+
+    
+    "favouriteSubjects" : [
+        {
+            "name" : "Full stack web Dev",
+            "photo" : "./Web Development.jpg",
+            "description" : "Full-stack developers have a high level of competency in both frontend and backend languages. They are skilled in HTML, CSS, JavaScript, NodeJS, ExpressJS, Django, and PHP. Equally, full-stack developers understand various database management systems (DBMS) like MySQL, PostgreSQL, MongoDB, and more"
+        },
+        {
+            "name" : "4IR Technologies",
+            "photo" : "./images.jpg",
+            "description" : "The Fourth Industrial Revolution is a way of describing the blurring of boundaries between the physical, digital, and biological worlds. It's a fusion of advances in artificial intelligence (AI), robotics, the Internet of Things (IoT), 3D printing, genetic engineering, quantum computing, and other technologies"
+        },
+        {
+            "name" : "Agile  Skill",
+            "photo" : "./agile_skills.avif",
+            "description" : "The agile web design process directs designers to release designs and get real-time feedback from users and other stakeholders early, providing an opportunity to make changes quickly and iteratively"
+        }
+    ],
+
+
+    "places": [
+        {
+          "name": "Botanical Garden Walter Sisulu",
+          "description": "Walter Sisulu Botanical Garden is a home to more than 600 plant species, has the most beautiful waterfall for pictures and was renamed after Walter Sisulu.",
+          "image": "walter.jpg"
+        },
+        {
+          "name": "Orlando Towers",
+          "description": "Orlando Towers is located in one of the largest townships in South Africa, the most popular tourist attraction and is used for bungee jumping.",
+          "image": "orlando.jpg"
+        },
+        {
+          "name": "Johannesburg Art Gallery",
+          "description": "The Joburg Art Gallery is the largest gallery in Africa. The building was designed by a British architect, Sir Edwin Lutyens, and the gallery houses works by artists such as Pablo Picasso.",
+          "image": "art.jpg"
+        }
+      ]
+
+
+
+
+
+
+}
+
+
+
+
+
+
+

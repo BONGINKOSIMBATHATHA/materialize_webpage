@@ -1,0 +1,214 @@
+body{
+    background-image: url(intelligence.jpg);
+}
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150%;
+    max-width: 600px; /* Limit the maximum width for better readability */
+}
+
+.full-name {
+    flex: 1;
+    text-align: left;
+}
+
+.profile-photo {
+    flex: 0 0 auto;
+    margin-left: 20px; /* Add some space between the name and the photo */
+    max-width: 150px; /* Limit the maximum width of the photo */
+    height: auto;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+    .profile-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .full-name {
+        text-align: center;
+        margin-bottom: 10px; /* Add some space between the name and the photo */
+    }
+
+    .profile-photo {
+        margin-left: 0; /* Remove left margin for vertical alignment */
+        align-self: center;
+    }
+}
+
+
+
+
+.table-wrapper {
+    overflow-x: auto; /* Enable horizontal scrolling on small screens */
+}
+
+.language-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.language-table th,
+.language-table td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    .language-table {
+        display: block;
+        width: 100%;
+    }
+
+    .language-table thead,
+    .language-table tbody,
+    .language-table th,
+    .language-table td,
+    .language-table tr {
+        display: block;
+    }
+
+    .language-table tr {
+        border-bottom: none;
+    }
+
+    .language-table td {
+        border: none;
+        border-bottom: 1px solid #ddd;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    .language-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 8px;
+        font-weight: bold;
+    }
+}
+
+
+
+.city {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.city-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Adjust the max-width as needed */
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.city-info {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.city-photo {
+    flex: 0 0 auto;
+    max-width: 200px; /* Adjust the max-width as needed */
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+    .city-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .city-info {
+        margin-right: 0;
+        margin-bottom: 10px; /* Add some space between the text and the photo */
+        text-align: center;
+    }
+
+    .city-photo {
+        align-self: center;
+    }
+}
+
+
+.favourite-subjects {
+    padding: 10px;
+}
+
+.favourite-subjects h3 {
+    text-align: center;
+}
+
+.subject-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.subject-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.subject-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.subject-info {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Zig-zag pattern for small screens */
+@media (max-width: 600px) {
+    .subject-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .subject-item:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+
+    .subject-item {
+        margin-bottom: 20px;
+    }
+
+    .subject-photo {
+        margin-bottom: 10px;
+    }
+}

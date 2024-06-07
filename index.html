@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my personal webpage</title>
+    
+<link rel="stylesheet" href="styles.css">
+    
+    
+    <link rel="stylesheet" href="materialize.css">
+</head>
+<div class="profile">
+    <div class="profile-container">
+        <h2 class="full-name">{{data.user.fullName}}</h2>
+        {{#if data.user.photo}}
+            <img class="profile-photo" src="{{data.user.photo}}" alt="Profile Photo">
+        {{/if}}
+    </div>
+</div>
+
+
+    
+
+<div class="city">
+    <div class="city-container">
+        <div class="city-info">
+            <h3>City: {{data.city.name}}</h3>
+            <p>{{data.city.description}}</p>
+        </div>
+        {{#if data.city.photo}}
+            <img class="city-photo" src="{{data.city.photo}}">
+        {{/if}}
+    </div>
+</div>
+
+     <div>
+            <h3 class="center-align">ForeignLanguage </h3>
+            <p><strong></strong> {{foreignLanguage.language}}</p>
+            
+
+            <div class="table-wrapper">
+                <table class="language-table">
+                    <thead>
+                        <tr>
+                            <th>English Phrase</th>
+                            <th>Portuguese</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hello</td>
+                            <td>olá</td>
+                        </tr>
+                        <tr>
+                            <td>Bye</td>
+                            <td>tchau</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+
+
+
+
+
+            <div class="favourite-subjects">
+                <h3 class="center-align">Favourite Subjects</h3>
+                <div class="subject-grid">
+                    {{#each data.favouriteSubjects}}
+                        <div class="subject-item">
+                            <img class="subject-photo" src="{{photo}}" alt="{{name}}">
+                            <div class="subject-info">
+                                <strong>{{name}}</strong>
+                                <p>{{description}}</p>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+
+
+
+
+            <script id="places-template" type="text/x-handlebars-template">
+                <section>
+                    <h3>Historical Places</h3>
+                    <div class="places">
+                        {{#each places}}
+                        <div>
+                            <h4>{{name}}</h4>
+                            <div class="hplaces">
+                                <div>
+                                    <p>{{description}}</p>
+                                </div>
+                                <div>
+                                    <img src="{{image}}" alt="{{name}}">
+                                </div>
+                            </div>
+                        </div>
+                        {{/each}}
+                    </div>
+                </section>
+            </script>
+            
+            
+</body>
+</html>
