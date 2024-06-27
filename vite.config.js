@@ -1,12 +1,18 @@
 import handlebars from 'vite-plugin-handlebars';
+export default {
+  base : '/responsive_webpages/',   // <-- add this
+  plugins: [
+    handlebars({
+      context: data, 
+    }),
+  ],
+};
 import data from "./New folder/data.json";
 export default {
-  plugins: [handlebars({
-    context : {
-        /*
-        previous setup here
-        */
-        data   // add this
-    }
-  })],
+  base : '/responsive_webpages/',   // <-- add this
+  plugins: [
+    handlebars({
+      context: data, 
+    }),
+  ],
 };
