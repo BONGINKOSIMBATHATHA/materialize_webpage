@@ -82,27 +82,18 @@
 
 
 
+            <div class="places">
+                <h3 class="center-align">PLACES</h3>
+                <div class="places">
 
-            <script id="places-template" type="text/x-handlebars-template">
-                <section>
-                    <h3>Historical Places</h3>
-                    <div class="places">
-                        {{#each places}}
-                        <div>
-                            <h4>{{name}}</h4>
-                            <div class="hplaces">
-                                <div>
-                                    <p>{{description}}</p>
-                                </div>
-                                <div>
-                                    <img src="{{image}}" alt="{{name}}">
-                                </div>
-                            </div>
-                        </div>
-                        {{/each}}
-                    </div>
-                </section>
-            </script>
+        {{#each data.places}}
+        <div class="place">
+            <h2>{{name}}</h2>
+            <img src="{{image}}" alt="{{name}}">
+            <p>{{description}}</p>
+        </div>
+        {{/each}}
+    
             
             
 </body>

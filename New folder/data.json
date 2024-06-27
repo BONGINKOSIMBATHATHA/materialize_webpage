@@ -44,18 +44,17 @@
         {
           "name": "Botanical Garden Walter Sisulu",
           "description": "Walter Sisulu Botanical Garden is a home to more than 600 plant species, has the most beautiful waterfall for pictures and was renamed after Walter Sisulu.",
-          "image": "walter.jpg"
+          "image": "./sisulu-2.jpg"
         },
         {
           "name": "Orlando Towers",
           "description": "Orlando Towers is located in one of the largest townships in South Africa, the most popular tourist attraction and is used for bungee jumping.",
-          "image": "orlando.jpg"
+          "image": "./Tower.jfif"
         },
         {
-          "name": "Johannesburg Art Gallery",
+          "name": "Waterfront Cape Town",
           "description": "The Joburg Art Gallery is the largest gallery in Africa. The building was designed by a British architect, Sir Edwin Lutyens, and the gallery houses works by artists such as Pablo Picasso.",
-          "image": "art.jpg"
-        }
+          "image": "./V&A.jpg" }
       ]
 
 
